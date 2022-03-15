@@ -12,8 +12,8 @@ const User = require("../models/user");
 const transporter = nodemailer.createTransport(
   mailgunTransport({
     auth: {
-      api_key: process.env.API_KEY,
-      domain: process.env.API_DOMAIN,
+      api_key: process.env.MAILGUN_API_KEY,
+      domain: process.env.MAILGUN_DOMAIN,
     },
   })
 );
